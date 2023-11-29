@@ -14,7 +14,7 @@ main{
 }
 
 .rating-card{
-    background-color: hsl(213, 19%, 18%);
+    background: hsl(213, 19%, 18%);
     color: white;
     width: 350px;
     height: 350px;
@@ -25,7 +25,102 @@ main{
     padding: 20px 30px;
 }
 .star-icon{
-    background-color: hsla(216, 12%, 8%,0.4);
+    background-color: hsla(216, 12%, 8%,0.3);
     width: 20px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 9px;
+}
+
+.rating-card h1{
+    font-size: 30px;
+}
+
+.description{
+    color:hsl(216, 12%, 54%);
+}
+
+.rates{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.rate{
+    background-color: hsla(216, 12%, 8%,0.3);
+    width: fit-content;
+    border-radius: 50%;
+    padding: 9px 15px;
+    color: hsl(217, 12%, 63%);
+}
+
+.rate.selected {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    }
+
+.rate.lower-index {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+    }
+
+.rate:hover{
+    cursor: pointer;
+}
+
+.submit{
+    background-color: hsl(25, 97%, 53%);
+    border-width: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+}
+.submit:hover{
+    cursor: pointer;
+}
+
+
+/* Thank you card */
+
+.thank-you{
+    background:hsl(213, 19%, 18%);
+    color: white;
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 30px;
+    display: none;
+}
+
+.thank-you img{
+    width: 150px;
+}
+
+.your-result{
+    color: hsl(25, 97%, 53%);
+    background-color: hsla(216, 12%, 8%,0.3);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.thank-you-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.thank-you-text .description{
+    text-align: center;
+    width: 340px;
+    font-size: 15px;
 }

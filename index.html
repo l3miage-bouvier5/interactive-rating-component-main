@@ -11,11 +11,14 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    
 
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
@@ -26,32 +29,35 @@
           <img src="./images/icon-star.svg" alt="star icon" />
         </div>
         <h1>How did we do?</h1>
-        <div class="descritpion">
+        <div class="description">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </div>
         <div class="rates">
-          <div class="rate one">1</div>
-          <div class="rate two">2</div>
-          <div class="rate three">3</div>
-          <div class="rate four">4</div>
-          <div class="rate five">5</div>
+          <div class="rate one" data-index="1">1</div>
+          <div class="rate two" data-index="2">2</div>
+          <div class="rate three" data-index="3">3</div>
+          <div class="rate four" data-index="4">4</div>
+          <div class="rate five" data-index="5">5</div>
         </div>
-        <button class="submit" type="submit" onclick="submit()">Submit</button>
+        <button class="submit" type="submit">Submit</button>
       </div>
 
-      <!-- Rating state end -->
+      <div class="thank-you">
+        <img src="./images/illustration-thank-you.svg" alt="icon thank you" />
 
-      <!-- Thank you state start -->
+        <div class="your-result">You selected Add rating here out of 5</div>
 
-      <!-- You selected  Add rating here  out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-      <!-- Thank you state end -->
+        <div class="thank-you-text">
+          <h1>Thank you!</h1>
+          <div class="description">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </div>
+        </div>
+      </div>
     </main>
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
